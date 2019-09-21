@@ -3,7 +3,7 @@ A Vue.js plugin to globally import all vue components
 
 ## Requirements
 1. A Vue or Nuxt installation
-2. Lodash as Node dependency
+
 ## Installation
 
 ### 1) Install the package using Node
@@ -12,22 +12,16 @@ A Vue.js plugin to globally import all vue components
 $ npm i --save vue-component-importer
 ```
 
-If you don't have Lodash installed yet, also run:
-```shell
-$ npm i --save lodash
-```
-
 ### 2a) With Vue
-In your `src/main.js` file also import lodash and the vue-component-importer
+In your `src/main.js` file also import the vue-component-importer
 ```js
-import lodash from 'lodash'
 import importComponents from 'vue-component-importer'
 ```
 
 Before the creation of your Vue instance add the following code:
 ```js
 let components = require.context('@/components', true, /[a-zA-Z]\w+\.(vue)$/)
-importComponents(lodash, Vue, components)
+importComponents(Vue, components)
 
 ```
 The first parameter is the folder you want to import your components from. If you just want to include some components you can change the path to just use a subdirectory of components like `@/components/slices`
@@ -39,11 +33,10 @@ Do not list the components imported by the plugin in the `components: {} `field.
 Create a `plugins/componentimporter.js` file and add the following code:
 ```js
 import Vue from 'vue'
-import lodash from 'lodash'
 import importComponents from 'vue-component-importer'
 
 let components = require.context('@/components', true, /[a-zA-Z]\w+\.(vue)$/)
-importComponents(lodash, Vue, components)
+importComponents(Vue, components)
 
 ```
 The first parameter is the folder you want to import your components from. If you just want to include some components you can change the path to just use a subdirectory of components like `@/components/slices`
