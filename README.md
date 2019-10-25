@@ -1,11 +1,11 @@
 <h2 align="center">vue-component-importer</h2>
 
 <p align="center">
-  <a href="https://github.com/ConstantinRoss/vue-component-importer/blob/master/LICENSE.md">
-    <img alt="License" src="https://img.shields.io/github/license/ConstantinRoss/vue-component-importer.svg">
+  <a href="https://github.com/c0nst4ntin/vue-component-importer/blob/master/LICENSE.md">
+    <img alt="License" src="https://img.shields.io/github/license/c0nst4ntin/vue-component-importer.svg">
   </a>
-  <a href="https://img.shields.io/github/package-json/v/ConstantinRoss/vue-component-importer">
-    <img src="https://img.shields.io/github/package-json/v/ConstantinRoss/vue-component-importer">
+  <a href="https://img.shields.io/github/package-json/v/c0nst4ntin/vue-component-importer">
+    <img src="https://img.shields.io/github/package-json/v/c0nst4ntin/vue-component-importer">
   </a>
   <a href="https://img.shields.io/npm/dm/vue-component-importer.svg">
     <img src="https://img.shields.io/npm/dm/vue-component-importer.svg">
