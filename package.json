@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@c0nst4ntin/vue-component-importer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Vue.js plugin to globally import all vue components",
   "author": "Constantin Ross",
   "license": "MIT",
