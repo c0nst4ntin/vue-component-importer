@@ -1,15 +1,15 @@
 <h2 align="center">vue-component-importer</h2>
 
 <p align="center">
-  <a href="https://github.com/c0nst4ntin/vue-component-importer/blob/master/LICENSE.md">
+  <a href="https://github.com/c0nst4ntin/vue-component-importer/blob/master/LICENSE">
     <img alt="License" src="https://img.shields.io/github/license/c0nst4ntin/vue-component-importer.svg">
   </a>
-  <a href="https://img.shields.io/github/package-json/v/c0nst4ntin/vue-component-importer">
+  <a href="https://github.com/c0nst4ntin/vue-component-importer/blob/master/package.json">
     <img src="https://img.shields.io/github/package-json/v/c0nst4ntin/vue-component-importer">
   </a>
-  <a href="https://img.shields.io/npm/dm/vue-component-importer.svg">
-    <img src="https://img.shields.io/npm/dm/vue-component-importer.svg">
-</a>
+  <a href="https://www.npmjs.com/package/@c0nst4ntin/vue-component-importer">
+    <img src="https://img.shields.io/npm/dm/@c0nst4ntin/vue-component-importer">
+  </a>
 </p>
 
 <p align="center">
@@ -30,13 +30,13 @@ This Vue.js Plugin will import all your Vue.js Components from a certain directo
 #### 1) Install the package using Node
 
 ```shell
-$ npm i --save vue-component-importer
+$ npm i --save @c0nst4ntin/vue-component-importer
 ```
 
 #### 2a) With Vue
 In your `src/main.js` file also import the vue-component-importer
 ```js
-import importComponents from 'vue-component-importer'
+import importComponents from '@c0nst4ntin/vue-component-importer'
 ```
 
 Before the creation of your Vue instance add the following code:
@@ -51,7 +51,7 @@ The first parameter is the folder you want to import your components from. If yo
 Create a `plugins/componentimporter.js` file and add the following code:
 ```js
 import Vue from 'vue'
-import importComponents from 'vue-component-importer'
+import importComponents from '@c0nst4ntin/vue-component-importer'
 
 let components = require.context('@/components', true, /[a-zA-Z]\w+\.(vue)$/)
 importComponents(Vue, components)
